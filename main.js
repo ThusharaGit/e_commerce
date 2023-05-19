@@ -17,3 +17,16 @@ function toggleHamburgerMenu() {
     navMenu.classList.toggle('active');
     
 }
+
+fetch('https://dummyjson.com/products')
+.then(response => response.json())
+.then(data => {
+   const products = rawData.products;
+   const firstProduct = products[25];
+   const productPhotos = firstProduct.images;
+   console.log('Product photos:', productPhotos);
+})
+
+.catch(error => {
+    console.log(error)
+});
