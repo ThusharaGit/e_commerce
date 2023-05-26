@@ -4,6 +4,7 @@
 --footer-heigth:76px;
 --primary-bg-color:#575252;
 --secondary-bg-color:#C5F1FF;
+--accent-color:#0a6c8a;
 }
 *{
     margin: 0;
@@ -239,3 +240,38 @@ footer{
       width: 350px;
     }
   }
+
+  .slider {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .slider img {
+    width: 100%;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .page-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+
+   }
+
+  .page-dot:hover {
+      background-color: var(--accent-color);
+    
+  }
+  .contact-form {
+    width: 95%;
+  }
+  .amount {
+
+  }
+
+
